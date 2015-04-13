@@ -1,0 +1,127 @@
+#home {
+	background-image: url('images/micstick.png');
+	background-repeat: repeat-y;
+	text-align: center;
+	display: block;
+	width: 133px;
+	margin: 0px auto;
+	height: 20%;
+}
+
+header h1 {
+	margin-top:0%;
+}
+
+p, li {
+	margin-bottom: 20px;
+	font-size: 14px;
+}
+
+.title_line {
+	display:none;
+}
+
+h1 { 
+	font-size: 2em;
+	margin: .67em 0; 
+	color: #e2526d;
+}
+
+h2 {
+	font-size: 1.5em; 
+	margin: .75em 0;
+	font-family:'OpenSans', sans-serif;
+}
+
+h3 {
+	font-size: 1.17em;
+	margin: .83em 0;
+	color: #333;
+}
+
+.inner ul li {
+	line-height: 20px;
+}
+
+.post-body li {
+  margin-bottom: 0.5em;
+}
+.post-body ul {
+  margin-left: 2em;
+}
+.post-body ul {
+  margin-bottom: 20px;
+  margin-left: 2em;
+}
+
+strong {
+	font-weight:bold;
+	color:#e1566c;
+}
+
+em {
+	font-style: italic;
+}
+
+#portraits li .name {
+	margin: 10px 25px 10px 25px;
+}
+
+.lead {
+	color:#e1566c;
+	text-align: center;
+}
+
+a {
+	color:#e1566c;
+}
+
+/* this set a nice 10px padding for all sections so the paragraph are not touching the edge */
+section {
+ padding:10px;
+ margin-top:30px;
+}
+
+/* set the img in paragraph to 100% to have the image fit the phone screen on small phone */
+section p img.aligncenter {
+	clear: both;
+	display: block;
+	text-align: center;
+	margin: 0px auto;
+}
+
+/* set the iframe (video) in paragraph to 100% to have the image fit the phone screen on small phone */
+section p iframe {
+ width:100%;
+}
+
+/* that fix a weird padding on phone for the list in paragraph */
+.post-body ul {
+ margin-left:0;
+}
+
+/* on mobile algin the hamburger with the phonation logo */
+nav ul {
+	margin-top:30px;
+}
+
+#nav li a {
+	text-transform:uppercase;
+}
+
+/* set the img in the header to 320px, if not it's too big for the portrait mode */ 
+header h1 img {
+ max-width:320px;
+}
+
+/* if the width of the screen is lower than 640 px the img on the header stick to the top of the page */
+@media screen and (max-width: 640px) {
+header h1{
+margin-top:-120px;
+}
+}
+
+section.contact {
+/*	background-color:#f9f9f9;*/
+	z-index:-1;
+}

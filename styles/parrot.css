@@ -1,0 +1,65 @@
+#micstick {
+	display: none;
+	z-index: -1;
+	position: fixed;
+	background-image: url("../images/micstick2.png");
+	background-repeat: repeat-y;
+	top: 0px;
+	left: 88px;
+	width: 2px;
+	height: -moz-calc(100% - 140px); //732 = 200 + 532
+	height: -webkit-calc(100% - 140px);
+	height: calc(100% - 140px);
+}
+
+#micstick.stickbot {
+	position:absolute;
+	height: 100%;
+	top:auto;
+	bottom: 210px;
+}
+
+#parrot {
+	display: none;
+	position: absolute;
+#	background-color: rgba(0, 255, 0, 128);
+	height: 138px;
+	margin-top: 0px;
+	top: 70px;
+	left: 84px;
+}
+
+#parrot.sticky {
+	position: fixed;
+#	background-color: rgba(50, 255, 50, 128);
+	top: auto;
+	bottom: 3px !important;
+}
+
+#parrot.stickbot {
+	position: absolut !important;
+	top: auto;
+	bottom: 113px !important;
+}
+
+.parrot_on {
+	display:block !important;
+}
+
+
+@media screen and (max-width: 1024px) {
+
+#parrot {
+	top: 70px;
+	left: 69px;
+}
+#micstick {
+	left: 73px;
+}
+}
+
+@media screen and (max-width: 950px){
+#parrot.parrot_on, #micstick.parrot_on {
+	display:none !important;
+}	
+}
